@@ -1,7 +1,7 @@
 # Lab 4: Registration, Login and JWT
 
-**Student Name:** K.Krishna Manohar Reddy
-**Registration Number:** 252U1R1215  
+**Student Name:** V.Ravi Vamsi
+**Registration Number:** 252U1R1253  
 **Section:** CSE-2E(211)
 **Course:** Backend Development Fundamentals  
 **Year / Term:** II Term II  
@@ -135,9 +135,9 @@ CREATE TABLE IF NOT EXISTS users (
 - **Request Body:**
   ```json
   {
-    "username": "Krishna123",
-    "name": "K.Krishna Manohar Reddy",
-    "password": "Krishna@123"
+    "username": "vamsi123",
+    "name": "V.Ravi Vamsi",
+    "password": "vamsi@123"
   }
   ```
 
@@ -171,8 +171,8 @@ CREATE TABLE IF NOT EXISTS users (
 - **Request Body:**
   ```json
   {
-    "username": "Krishna123",
-    "password": "Krishna@123"
+    "username": "vamsi123",
+    "password": "vamsi@123"
   }
   ```
 
@@ -216,9 +216,9 @@ Follow these steps to test all API cases in Postman:
    - Enter:
      ```json
      {
-       "username": "Krishna123",
-       "name": "K.Krishna Manohar Reddy",
-       "password": "Krishna@123"
+       "username": "vamsi123",
+       "name": "V.Ravi Vamsi",
+       "password": "vamsi@123"
      }
      ```
    - Click **Send**.
@@ -234,8 +234,8 @@ Follow these steps to test all API cases in Postman:
    - Remove the `password` field from the request body:
      ```json
      {
-       "username": "Krishna123",
-       "name": "K.Krishna Manohar Reddy"
+       "username": "vamsi123",
+       "name": "V.Ravi Vamsi"
      }
      ```
    - Click **Send**.
@@ -251,8 +251,8 @@ Follow these steps to test all API cases in Postman:
    - Under **Body** (`raw` > `JSON`), enter:
      ```json
      {
-       "username": "Krishna123",
-       "password": "Krishna@123"
+       "username": "vamsi123",
+       "password": "vamsi@123"
      }
      ```
    - Click **Send**.
@@ -264,7 +264,7 @@ Follow these steps to test all API cases in Postman:
      ```json
      {
        "username": "unknown_user",
-       "password": "kittu@123"
+       "password": "invalid"
      }
      ```
    - Click **Send**.
@@ -275,7 +275,7 @@ Follow these steps to test all API cases in Postman:
    - Use the correct username with an invalid password:
      ```json
      {
-       "username": "Krishna123",
+       "username": "vamsi123",
        "password": "Invalid"
      }
      ```
@@ -377,5 +377,6 @@ $$\text{JWT} = \text{Header} . \text{Payload} . \text{Signature}$$
 
 4. **Problem:** Sensitive information exposure in JWT payloads.  
    **Solution:** Restricted the JWT payload strictly to the `username` identifier and kept the secret key isolated on the server.
-#   B a c k e n d - l a b - 4  
+#   B a c k e n d - l a b - 4 
+ 
  
